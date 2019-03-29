@@ -1,6 +1,3 @@
-# 220-Advanced-Template
-## Not for class use - Fork me!
+# Python 220: online cohort April 2019
+## Class repo for grading
 
-This is the master repo from which an instructor will use a fork to create their class assignment repo.
-
-PLEASE do not use this for your students' assignments.
