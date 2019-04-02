@@ -2,6 +2,9 @@
 '''
 This will be our inventory class
 '''
+
+
+# pylint: disable=R0903
 class Inventory:
     '''
     This class will track the inventory of the products housed

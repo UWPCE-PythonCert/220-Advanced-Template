@@ -4,6 +4,9 @@ This class is for electric appliances
 '''
 from store_Inventory import Inventory
 
+
+# pylint: disable=R0903
+# pylint: disable=R0913
 class ElectricAppliances(Inventory):
     '''
     Here we have the Inventory management for electric appliances, below it is
@@ -11,21 +14,21 @@ class ElectricAppliances(Inventory):
     and... voltage I guess.
     '''
 
-    def __init__(self, product_code, description, market_price, rental_price, \
-    brand, voltage):
+    def __init__(self, product_code, description, market_price, rental_price,
+                 brand, voltage):
         '''
         Creates common instance variables from the parent class
         '''
-        Inventory.__init__(self, product_code, description, market_price,\
-        rental_price)
-
+        Inventory.__init__(self, product_code, description, market_price,
+                           rental_price)
 
         self.brand = brand
         self.voltage = voltage
 
     def return_as_dict(self):
         '''
-        Here we will populate the dictionary with the current Inventory numbers.
+        Here we will populate the dictionary with the current Inventory
+        numbers.
         '''
         output_dict = {}
         output_dict['product_code'] = self.product_code

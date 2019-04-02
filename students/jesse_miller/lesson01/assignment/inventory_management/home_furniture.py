@@ -2,24 +2,28 @@
 '''
 This is the furniture class
 '''
-from store_inventory import inventory
+from store_Inventory import Inventory
 
-class FurnitureClass(inventory):
+
+# pylint: disable=R0913
+# pylint: disable=R0903
+class FurnitureClass(Inventory):
     '''
     Creates common instance variables from the parent class
     '''
-    def __init__(self, product_code, description, market_price, rental_price, \
-    material, size):
+    def __init__(self, product_code, description, market_price, rental_price,
+                 material, size):
 
-        inventory.__init__(self, product_code, description, market_price, \
-        rental_price)
+        Inventory.__init__(self, product_code, description, market_price,
+                           rental_price)
 
         self.material = material
         self.size = size
 
     def return_as_dict(self):
         '''
-        Here we will populate the dictionary with the current inventory numbers.
+        Here we will populate the dictionary with the current Inventory
+        numbers.
         '''
         output_dict = {}
         output_dict['product_code'] = self.product_code

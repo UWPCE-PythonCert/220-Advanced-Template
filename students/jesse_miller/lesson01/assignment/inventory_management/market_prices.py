@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+# pylint: disable=C0111
+# pylint: disable=W0613
 
 def get_latest_price(item_code):
     return 24
