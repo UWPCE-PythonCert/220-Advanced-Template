@@ -2,7 +2,7 @@
 '''
 This is the furniture class
 '''
-from store_Inventory import Inventory
+from store_inventory import Inventory
 
 
 # pylint: disable=R0913

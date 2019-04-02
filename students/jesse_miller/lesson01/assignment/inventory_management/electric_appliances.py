@@ -2,7 +2,7 @@
 '''
 This class is for electric appliances
 '''
-from store_Inventory import Inventory
+from store_inventory import Inventory
 
 
 # pylint: disable=R0903
